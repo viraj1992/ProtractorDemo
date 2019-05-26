@@ -1,0 +1,20 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "automation framework for protractor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Viraj Pai",
+  "license": "ISC",
+  "dependencies": {
+    "protractor": "^5.4.2",
+    "@types/jasmine": "^3.3.5",
+    "@types/jasminewd2": "^2.0.6",
+    "jasmine": "~3.3.1",
+    "typescript": "~3.4.5",
+    "ts-node": "7.0.1",
+    "@types/node": "10.12.18"
+  }
+}
