@@ -8,6 +8,8 @@ describe('XYZ Bank', () => {
     let mainpage = new MainPage();
     let customeroptions = new CustomerOptions();
     let addcustomer = new AddCustomer();
+    let firstName = addcustomer.generateRandomName("First Name");
+    let lastName = addcustomer.generateRandomName("Last Name");
     
 
     it('should open XYZ Bank Home Page', async () => {
@@ -29,8 +31,8 @@ describe('XYZ Bank', () => {
     });
 
         it('should enter first name, last name, postcode and add new customer', async () => {
-        await addcustomer.firstName.sendKeys(addcustomer.generateRandomName("First Name"));
-        await addcustomer.lastName.sendKeys(addcustomer.generateRandomName("Last Name"));
+        await addcustomer.firstName.sendKeys(firstName);
+        await addcustomer.lastName.sendKeys(lastName);
         await addcustomer.postCode.sendKeys(addcustomer.generateRandomNumber());
         await addcustomer.addCustomerBtn.click();
         await browser.sleep(2000);
